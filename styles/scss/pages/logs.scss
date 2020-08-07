@@ -1,0 +1,44 @@
+.log
+{
+  font-size: 2rem;
+  padding: 0.5em;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5em;
+  &:not(:last-child)
+  {
+    margin-bottom: 1em;
+  }
+  &__user,&__status,.log__amount
+  {
+    p
+    {
+      font-weight: bold;
+      span
+      {
+        color:var(--blue-text-color);
+      }
+    }
+  }
+  .log__amount span
+  {
+    color:var(--robux-color) !important;
+  }
+  &__number
+  {
+    font-size: 1.5rem;
+  }
+  &__time
+  {
+    p
+    {
+      font-family: sans-serif;
+      color:gray;
+      font-style: italic;
+    }
+  }
+}
+.load-more-wrapper
+{
+  text-align: center;
+  margin-top: 2rem;
+}

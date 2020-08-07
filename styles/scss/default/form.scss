@@ -1,0 +1,16 @@
+.form-wrapper
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form:not(.apanel__roblox-account-form)
+{
+  font-size: 2rem;
+  max-width: 600px;
+  width: 100%;
+  padding: 0.5em 2em;
+  border: 3px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 10px 10px 34px -4px rgba(67,166,232,1);
+}

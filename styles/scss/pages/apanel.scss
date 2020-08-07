@@ -1,0 +1,39 @@
+.apanel
+{
+  &__block
+  {
+    font-size: 2rem;
+    margin-top: 1em;
+    label
+    {
+      display: block;
+      margin-bottom: 0.5em;
+    }
+    .flex-container
+    {
+      input
+      {
+        flex: 1;
+        margin-right: 0.5em;
+      }
+    }
+  }
+  &__roblox-account
+  {
+    text-align: center;
+    form
+    {
+      box-shadow: none;
+    }
+    h2
+    {
+      margin-bottom: 0.5em;
+    }
+    input
+    {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 1em;
+    }
+  }
+}

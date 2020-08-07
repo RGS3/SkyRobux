@@ -1,0 +1,21 @@
+.icon
+{
+  width: 3rem;
+  height: 3rem;
+}
+.animated-icon
+{
+  transition: 0.3s transform ease;
+  &:hover
+  {
+    transform: scale(1.1) rotateZ(15deg);
+  }
+}
+.margined-icon_right
+{
+  margin-right: 1rem;
+}
+.margined-icon_left
+{
+  margin-left: 1rem;
+}

@@ -1,0 +1,97 @@
+.main-form
+{
+  .flex-container
+  {
+    justify-content: flex-start;
+  }
+  &__title
+  {
+    text-align: center;
+  }
+  &__robux-aviable-block
+  {
+    font-size: 2rem;
+    p
+    {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--border-color);
+      border-radius: 1.5em;
+      padding: 0.5em 1em;
+      span
+      {
+        color:var(--robux-color);
+        font-family: "Oswald",sans-serif;
+        margin: 0 0.25em;
+      }
+    }
+    text-align: center;
+
+  }
+  &__nickname
+  {
+    input
+    {
+      width: 100%;
+    }
+  }
+  &__converter
+  {
+    justify-content: space-between;
+  }
+  &__values-wrapper
+  {
+    width: 50%;
+    input
+    {
+      flex:1;
+      width: 100%;
+    }
+  }
+  &__spinning-arrows
+  {
+    margin: 0 1rem;
+    img
+    {
+      transition: 0.5s transform ease;
+      &:hover
+      {
+        transform: rotateZ(360deg);
+      }
+    }
+  }
+  &__robux-course-wrapper
+  {
+    text-align: center;
+    .main-form__robux-course
+    {
+      font-style: italic;
+      font-weight: 400;
+    }
+  }
+  &__payment-method
+  {
+    p
+    {
+      text-align: center;
+      font-weight: bold;
+    }
+    img
+    {
+      width: 100%;
+      height: auto;
+      max-width: 600px;
+    }
+  }
+  &__agreement
+  {
+    .checkbox
+    {
+      margin-right: 1.5rem;
+    }
+  }
+  &__submit-block
+  {
+    text-align: center;
+  }
+}

@@ -1,0 +1,76 @@
+@import "colors";
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+:root {
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+body
+{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+h2
+{
+  font-size: 3rem;
+  font-weight: bold;
+  color:var(--blue-text-color);
+}
+p
+{
+  font-size: 2rem;
+}
+.line
+{
+  margin-bottom: 15px;
+}
+.robux
+{
+  color:var(--robux-color);
+  font-family: "Oswald",sans-serif;
+  letter-spacing: 0.05rem;
+}
+.status
+{
+  justify-content: center !important;
+  transform: translateX(-20%);
+  opacity: 0;
+  transition: 0.3s all ease;
+  height: 0;
+  img
+  {
+    margin-right: 1.5rem;
+  }
+  p
+  {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  &.active
+  {
+    height: auto;
+    transform: none;
+    opacity: 1;
+  }
+}
+@import "blocks-containers";
+@import "buttons-links";
+@import "images-icons";
+@import "form";
+@import "loaders";
+
+@import "../imports/header";
+@import "../imports/footer";
+@import "../pages/welcome";
+@import "../pages/login";
+@import "../pages/apanel";
+@import "../pages/user-agreement";
+@import "../pages/logs";
+@import "media";

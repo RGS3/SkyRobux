@@ -1,0 +1,104 @@
+.header {
+  font-size: 2rem;
+  padding: 1.5em;
+  background: var(--header-bg);
+  border-bottom: 5px solid var(--border-color);
+  position: relative;
+  height: 20vmax;
+  max-height: 250px;
+  overflow: hidden;
+  animation: 120s header-sky linear infinite;
+  &__social-media
+  {
+    margin-left: auto;
+    align-self: flex-start;
+    flex-direction: column;
+    z-index: 2;
+  }
+  h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 3rem;
+    color:var(--blue-text-color);
+    text-transform: uppercase;
+    user-select: none;
+    margin-right: 0.5em;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    text-shadow: 1px 1px 1px #000;
+    a
+    {
+      font-size: 2.2em;
+      z-index: 2;
+    }
+  }
+  .cloud
+  {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    z-index: 1;
+  }
+  .cloud-1
+  {
+    width: 18rem;
+    height: 18rem;
+    top:10%;
+    left:5%;
+    animation: 30s cloud linear infinite;
+  }
+  .cloud-2
+  {
+    left:-100%;
+    top:50%;
+    width: 13rem;
+    height: 13rem;
+    transform: translateY(-50%);
+    animation: 30s cloud linear infinite;
+    animation-delay: 5s;
+  }
+  .cloud-3
+  {
+    top:20%;
+    transform: translateY(-30%);
+    left:-100%;
+    animation: 30s cloud linear infinite;
+    animation-delay: 10s;
+  }
+  .cloud-4
+  {
+    width: 16rem;
+    height: 16rem;
+    left:-100%;
+    bottom: 0;
+    animation: 30s cloud linear infinite;
+    animation-delay: 15s;
+  }
+}
+@keyframes cloud {
+  0%
+  {
+      left:-15%;
+  }
+  100%
+  {
+    left:110%;
+  }
+}
+@keyframes header-sky {
+  0%
+  {
+    background: var(--header-bg);
+  }
+  50%
+  {
+    background: var(--dark-sky-color);
+  }
+  100%
+  {
+    background: var(--header-bg);
+  }
+}

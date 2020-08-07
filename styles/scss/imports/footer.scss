@@ -1,0 +1,19 @@
+footer
+{
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0;
+  border-top: 5px solid var(--border-color);
+  width: 100%;
+  padding: 1rem;
+  background: white;
+  div
+  {
+    width: 100%;
+    text-align: center;
+    a
+    {
+      display: inline-block;
+    }
+  }
+}

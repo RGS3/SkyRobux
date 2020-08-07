@@ -1,0 +1,24 @@
+.loading
+{
+  font-size: 3rem;
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  border: 1px solid var(--border-color);
+  animation: 1s loader-anim infinite;
+}
+@keyframes loader-anim {
+  0%
+  {
+    transform: rotateZ(0deg);
+  }
+  50%
+  {
+    border-radius: 50%;
+  }
+  100%
+  {
+    transform: rotateZ(360deg);
+    border-radius: 0;
+  }
+}
